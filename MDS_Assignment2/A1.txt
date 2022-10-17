@@ -1,3 +1,4 @@
+Q1
 (a)
 模型的參數數量與模型本身的複雜度與資料集的特徵維度呈正相關，
 模型的參數數量越多，使模型達成收斂需要的資料筆數也就越多，當樣本數不足時會導致
@@ -9,3 +10,29 @@
 (b)避免維度詛咒的方法有哪些？
 1. 避免使用過多特徵，僅使用最適的特徵個數數量的作為訓練資料。
 2. 檢查特徵間是否有共線性關係，若有則整合或剔除具共線性關係的特徵們。
+
+Q2
+(a)試找一個開放數據，會用什麼方法來確認資料品質的好壞？
+我會由(c)小題的三項指標，來應用於(b)小題的SOP。
+
+(b)確認資料品質的標準作業流程。
+1. 檢查資料對母體的占比性(Proportion)與時效性(Timeliness)。
+2. 檢查資料的格式與豐富性，如一致性(consistency)、多元性(diversity)。
+3. 檢查資料的安全性(Confidentiality、Integrity、Availability)
+4. 檢查資料的準確及完善，如準確性(accuracy)、數據解釋性(interpretability)。
+
+(c)試建議三個可能衡量數據品質的量化指標 (i.e. KPIs)。
+1. 遺漏比例 (Missing value rate)
+2. 特徵的共線性 (Multi-Collinearity)
+3. 資訊量/熵 (Entropy)
+
+Q4
+(a)
+統計量填補 (statistics imputation): 以 mean, min, max 或不偏估計量來填補的方法。以 mean 填補可以保持平均數不變，以 min, max 填補可以樂觀或悲觀的表度做解釋。當我們需要解釋資料的樣貌，或是演算法不能接受空值時，此法是最直接的做法。
+預測式填補 (predictive imputation): 有 KNNI, MICE 等方式，MICE 會先用 mean 來填補所有的遺漏值，再逐一建立預測模型來填補一個欄位。此方法適用於生成與原始資料分布相似的資料點，引用論文的一句話: If the original variable is skewed, the imputed values will also be skewed. If the original variable is bounded by 0 and 100, the imputed values will also be bounded by 0 and 100.
+生成式填補 (generative imputation): 是將「生成對抗網路」(generative adversarial network, GAN) 的模型應用在填補上，以「生成模型」生成填補數據，再以「判別模型」判別生成後的數據為實際還是是被生成的。適用於圖像生成、聲音生成等領域，被大量應用"創造"上，如 NovelAI,繪圖軟體輔助渲染背景等。
+
+https://statisticalhorizons.com/predictive-mean-matching/
+https://www.ibm.com/docs/zh-tw/spss-statistics/25.0.0?topic=values-missing-value-analysis
+
+(b) 因為這些"有值"的樣本有機會代表了某種Integrity，很可能是systematic missing，如某年度以後的機台才能紀錄零件承受的壓力，而大部分的機台都無此紀錄，因此我們需要對這個壓力欄位做額外的填補而非直接刪除來得合常理。
