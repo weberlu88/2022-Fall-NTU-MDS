@@ -16,9 +16,9 @@ Q2
 我會由(c)小題的三項指標，來應用於(b)小題的SOP。
 
 (b)確認資料品質的標準作業流程。
-1. 檢查資料對母體的占比性(Proportion)與時效性(Timeliness)。
-2. 檢查資料的格式與豐富性，如一致性(consistency)、多元性(diversity)。
-3. 檢查資料的安全性(Confidentiality、Integrity、Availability)
+1. 檢查資料對母體的占比性(Proportion)與時效性(Timeliness)。=>離群值偵測
+2. 檢查資料的格式與豐富性，如一致性(consistency)、多元性(diversity)。=>正規化
+3. 檢查資料的安全性(Confidentiality、Integrity、Availability)。=>遺漏值填補
 4. 檢查資料的準確及完善，如準確性(accuracy)、數據解釋性(interpretability)。
 
 (c)試建議三個可能衡量數據品質的量化指標 (i.e. KPIs)。
@@ -36,3 +36,11 @@ https://statisticalhorizons.com/predictive-mean-matching/
 https://www.ibm.com/docs/zh-tw/spss-statistics/25.0.0?topic=values-missing-value-analysis
 
 (b) 因為這些"有值"的樣本有機會代表了某種Integrity，很可能是systematic missing，如某年度以後的機台才能紀錄零件承受的壓力，而大部分的機台都無此紀錄，因此我們需要對這個壓力欄位做額外的填補而非直接刪除來得合常理。
+
+Q5
+建兩個模型:
+A.凹凸不平=>1, 良品=>0
+B.刮痕=>1, 良品=>0
+
+只建一個模型:
+A.凹凸不平=>0, 刮痕=>1, 良品=>2 (什麼時候這個情況好? 各做一次自行解讀差在哪)
