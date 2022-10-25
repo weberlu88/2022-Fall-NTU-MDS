@@ -1,0 +1,44 @@
+Optimization terminated successfully.
+         Current function value: 0.055606
+         Iterations 16
+                          MNLogit Regression Results                          
+==============================================================================
+Dep. Variable:               K_Scatch   No. Observations:                 1941
+Model:                        MNLogit   Df Residuals:                     1914
+Method:                           MLE   Df Model:                           26
+Date:                Sun, 23 Oct 2022   Pseudo R-squ.:                  0.8893
+Time:                        10:40:10   Log-Likelihood:                -107.93
+converged:                       True   LL-Null:                       -975.15
+Covariance Type:            nonrobust   LLR p-value:                     0.000
+=========================================================================================
+           K_Scatch=1       coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+const                     8.0169        nan        nan        nan         nan         nan
+X_Minimum                -0.0646      0.061     -1.067      0.286      -0.183       0.054
+X_Maximum                 0.0632      0.061      1.044      0.296      -0.055       0.182
+Y_Minimum                -0.0162      0.013     -1.226      0.220      -0.042       0.010
+Y_Maximum                 0.0162      0.013      1.226      0.220      -0.010       0.042
+Pixels_Areas              0.0017      0.001      2.788      0.005       0.001       0.003
+X_Perimeter               0.0300      0.008      3.944      0.000       0.015       0.045
+Y_Perimeter              -0.0373      0.017     -2.236      0.025      -0.070      -0.005
+Sum_of_Luminosity     -1.682e-05   6.27e-06     -2.681      0.007   -2.91e-05   -4.52e-06
+Minimum_of_Luminosity    -0.0248      0.012     -2.040      0.041      -0.049      -0.001
+Maximum_of_Luminosity     0.0005      0.019      0.029      0.977      -0.036       0.037
+Length_of_Conveyer       -0.0018      0.004     -0.404      0.686      -0.010       0.007
+TypeOfSteel_A300          4.7089        nan        nan        nan         nan         nan
+TypeOfSteel_A400          3.3064        nan        nan        nan         nan         nan
+Steel_Plate_Thickness    -0.2575      0.097     -2.658      0.008      -0.447      -0.068
+Edges_Index              -2.6033      0.964     -2.701      0.007      -4.492      -0.714
+Empty_Index             -13.2467      4.768     -2.778      0.005     -22.591      -3.902
+Square_Index              2.9832      0.924      3.229      0.001       1.172       4.794
+Outside_X_Index         -95.5002     83.009     -1.150      0.250    -258.194      67.194
+Edges_X_Index             7.3119      2.017      3.625      0.000       3.358      11.266
+Edges_Y_Index            -5.4754      2.564     -2.136      0.033     -10.500      -0.451
+Outside_Global_Index      2.8886      0.924      3.126      0.002       1.077       4.700
+LogOfAreas               -2.9010      4.454     -0.651      0.515     -11.631       5.829
+Log_X_Index              -8.3077      5.612     -1.480      0.139     -19.307       2.692
+Log_Y_Index              16.4139      4.719      3.478      0.001       7.164      25.664
+Orientation_Index       -10.5780      2.156     -4.906      0.000     -14.804      -6.352
+Luminosity_Index         15.1091      3.379      4.472      0.000       8.486      21.732
+SigmoidOfAreas            3.5560      1.547      2.299      0.022       0.524       6.588
+=========================================================================================

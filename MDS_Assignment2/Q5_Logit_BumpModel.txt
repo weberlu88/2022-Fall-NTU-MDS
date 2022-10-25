@@ -1,0 +1,44 @@
+Warning: Maximum number of iterations has been exceeded.
+         Current function value: nan
+         Iterations: 35
+                          MNLogit Regression Results                          
+==============================================================================
+Dep. Variable:                  Bumps   No. Observations:                 1941
+Model:                        MNLogit   Df Residuals:                     1914
+Method:                           MLE   Df Model:                           26
+Date:                Sun, 23 Oct 2022   Pseudo R-squ.:                     nan
+Time:                        10:28:44   Log-Likelihood:                    nan
+converged:                      False   LL-Null:                       -990.11
+Covariance Type:            nonrobust   LLR p-value:                       nan
+=========================================================================================
+              Bumps=1       coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+const                   -12.9897        nan        nan        nan         nan         nan
+X_Minimum                 0.0441      0.050      0.879      0.379      -0.054       0.142
+X_Maximum                -0.0436      0.050     -0.870      0.384      -0.142       0.055
+Y_Minimum                 0.1252      0.023      5.348      0.000       0.079       0.171
+Y_Maximum                -0.1252      0.023     -5.348      0.000      -0.171      -0.079
+Pixels_Areas             -0.0022      0.002     -1.414      0.157      -0.005       0.001
+X_Perimeter              -0.0373      0.011     -3.288      0.001      -0.060      -0.015
+Y_Perimeter               0.0970      0.021      4.560      0.000       0.055       0.139
+Sum_of_Luminosity      1.582e-05   1.41e-05      1.122      0.262   -1.18e-05    4.34e-05
+Minimum_of_Luminosity     0.0172      0.010      1.734      0.083      -0.002       0.037
+Maximum_of_Luminosity     0.0315      0.012      2.521      0.012       0.007       0.056
+Length_of_Conveyer        0.0013      0.001      1.846      0.065   -7.93e-05       0.003
+TypeOfSteel_A300         -6.0621        nan        nan        nan         nan         nan
+TypeOfSteel_A400         -6.9937        nan        nan        nan         nan         nan
+Steel_Plate_Thickness    -0.0051      0.002     -3.208      0.001      -0.008      -0.002
+Edges_Index               1.1659      0.235      4.960      0.000       0.705       1.627
+Empty_Index              -3.2953      3.045     -1.082      0.279      -9.264       2.673
+Square_Index              1.1437      0.369      3.097      0.002       0.420       1.868
+Outside_X_Index          43.4036     66.951      0.648      0.517     -87.818     174.625
+Edges_X_Index            -1.8628      0.744     -2.503      0.012      -3.321      -0.404
+Edges_Y_Index             5.1532      1.001      5.147      0.000       3.191       7.116
+Outside_Global_Index      0.4553      0.331      1.375      0.169      -0.194       1.104
+LogOfAreas               -1.9522      3.785     -0.516      0.606      -9.371       5.467
+Log_X_Index               6.2231      4.181      1.488      0.137      -1.971      14.418
+Log_Y_Index               4.2860      4.020      1.066      0.286      -3.592      12.164
+Orientation_Index        -1.2111      1.149     -1.054      0.292      -3.464       1.042
+Luminosity_Index         -6.8484      2.574     -2.661      0.008     -11.894      -1.803
+SigmoidOfAreas           -0.3590      0.760     -0.472      0.637      -1.848       1.130
+=========================================================================================

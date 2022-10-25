@@ -26,6 +26,11 @@ Q2
 2. 特徵的共線性 (Multi-Collinearity)
 3. 資訊量/熵 (Entropy)
 
+Q3
+(a)適應性: 隨著時間的推移和模型是否需要重新訓練以維持績效水平，不適應性稱為drift(飄移)，細部包括drift detection(偵測), drift understanding(何原因發生飄移), drift adaptation(如何更新模型)。
+擴充性: TransferLearning，將A主題上訓練的模型，搬移至B主題使用，此舉是基於A、B主題的數據在空間分布上有可能有特徵空間的交集。例如將Tesla自小客車的自駕行車模型，轉移至大貨車的自動駕駛上。
+(b)我的數據
+
 Q4
 (a)
 統計量填補 (statistics imputation): 以 mean, min, max 或不偏估計量來填補的方法。以 mean 填補可以保持平均數不變，以 min, max 填補可以樂觀或悲觀的表度做解釋。當我們需要解釋資料的樣貌，或是演算法不能接受空值時，此法是最直接的做法。
