@@ -130,4 +130,5 @@ dmypy.json
 MDS_Assignment3_2022.zip
 MDS_Assignment3 Mining Process/MiningProcess_Flotation_Plant_Database.csv
 Project/*.csv
-Project/reduceddata/*.csv
+Project/reduceddata-ticks-5/*.csv
+Project/reduceddata-ticks-12/*.csv
